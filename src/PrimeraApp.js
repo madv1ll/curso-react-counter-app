@@ -1,7 +1,5 @@
 
-const PrimeraApp = () => {
-
-    const saludo = 'Hola Mundo'
+const PrimeraApp = ({saludo = 'No existe variable saludo en componente padre'}) => {
 
     return(
         <>
