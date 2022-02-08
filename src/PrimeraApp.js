@@ -1,5 +1,7 @@
 
-const PrimeraApp = ({saludo = 'No existe variable saludo en componente padre'}) => {
+import PropTypes from 'prop-types';
+
+const PrimeraApp = ({saludo}) => {
 
     return(
         <>
@@ -10,5 +12,8 @@ const PrimeraApp = ({saludo = 'No existe variable saludo en componente padre'}) 
         );
 
 }
-
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired,
+    otra: PropTypes.number
+}
 export default PrimeraApp;
