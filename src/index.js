@@ -8,5 +8,5 @@ import './index.css';
 const divRoot = document.querySelector('#root');
 
 // console.log(divRoot);
-console.log(CounterApp)
+// console.log(CounterApp)
 reactDOM.render( <CounterApp value={32323} /> , divRoot);
